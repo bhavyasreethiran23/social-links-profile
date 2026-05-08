@@ -1,0 +1,126 @@
+/* App.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Colors */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* Body */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: var(--grey-900);
+  min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Card */
+.card {
+  background-color: var(--grey-800);
+  width: 100%;
+  max-width: 385px;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+/* Name */
+.name {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Location */
+.location {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* Bio */
+.bio {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+/* Links Container */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Social Buttons */
+.link-btn {
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* Hover State */
+.link-btn:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+/* Focus State */
+.link-btn:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .card {
+    padding: 24px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .link-btn {
+    padding: 12px;
+  }
+}
